@@ -1,5 +1,5 @@
-export default async function getPastOrder(order) {
-  const res = await fetch(`/api/past-order/${order}`);
-  const data = await res.json();
+export default async function getPastOrders(order) {
+  const response = await fetch(`/api/past-order/${order}`);
+  const data = await response.json();
   return data;
 }
